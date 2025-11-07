@@ -384,16 +384,17 @@
         }
 
         .team-avatar {
-            width: 150px;
-            height: 150px;
+            width: 90px;
+            height: 90px;
             border-radius: 50%;
-            background: linear-gradient(135deg, var(--primary-green), var(--accent-green));
+            overflow: hidden;
             margin: 0 auto 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 4rem;
-            color: var(--white);
+        }
+        .team-avatar img {
+            width: 100%;
+            height: 100%
+            object-fit: cover;
+            display: block;
         }
 
         .team-role {
@@ -933,8 +934,10 @@
         <div class="container">
             <h2>Nuestro Equipo</h2>
             <div class="grid grid-2">
-                <div class="card team-card">
-                    <img src="Alexis.jpeg" alt="Alexis Araos Alfaro" class="avatar">
+              <div class="card team-card">
+                 <div class="team-avatar">
+                    <img src="Alexis.jpeg" alt="Alexis Araos Alfaro">
+                </div>    
                     <p class="team-role">Alexis Araos Alfaro</p>
                     <h3 style="color: var(--dark-text); margin-bottom: 0.5rem;">Profesor de Educación Física</h3>
                     <h3 style="color: var(--dark-text); margin-bottom: 0.5rem;">Preparador Físico</h3> 
@@ -946,16 +949,21 @@
                     </div>
                 </div>
                 <div class="card team-card">
-                    <div class="team-avatar">🤝</div>
+                    <div class="team-avatar">
+                     <img src="Bayron.jpeg" alt="Bayron Toro">
+                </div>    
                     <p class="team-role">Bayron Toro</p>
-                    <h3 style="color: var(--dark-text); margin-bottom: 1rem;">Licenciado en kinesiología Universidad de La Serena
-Diplomado en kinesiología deportiva 
-Diplomado en rehabilitación músculo esquelética</h3>
-                    <div class="team-specialties">
-                        <strong>Especialidades:</strong><br>
-                        • Kinesiología deportiva<br>
-                        • Rehabilitación músculo-esquelética (lesiones y readaptación funcional)<br>
-                        • Prevención de lesiones en deportistas (se desprende de kinesiología deportiva + rehab músculo-esquelética)<br>
+                    <h3 style="color: var(--dark-text); margin-bottom: 1rem;">Licenciado en Kinesiología Universidad de La Serena</h3>
+                    <h3 style="color: var(--dark-text); margin-bottom: 1rem;">Diplomado en Kinesiología deportiva</h3>
+                    <h3 style="color: var(--dark-text); margin-bottom: 1rem;">Diplomado en rehabilitación músculo esquelética</h3>
+
+                <div class="team-specialties">
+                    <strong>Especialidades:</strong><br>
+                    Kinesiología deportiva<br>
+                    Rehabilitación músculo-esquelética (lesiones y readaptación funcional)<br>
+                    Prevención de lesiones en deportistas
+                </div>
+              </div>
                     </div>
                 </div>
             </div>
