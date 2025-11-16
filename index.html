@@ -1211,55 +1211,59 @@
     <h2>Contacto</h2>
 
     <form class="contact-form"
-          action="mailto:info.machweiter@gmail.com"
-          method="POST"
-          enctype="text/plain">
+      action="https://api.web3forms.com/submit"
+      method="POST">
 
-      <div class="form-row">
-        <div class="form-group">
-          <label for="nombre">Nombre *</label>
-          <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
-        </div>
+  <!-- CLAVE DE WEB3FORMS -->
+  <input type="hidden" name="access_key" value="2625bf49-9682-4ade-b9f2-8c3c02637a17">
+  <input type="hidden" name="subject" value="Nueva reserva desde la web Mach Weiter">
+  <input type="hidden" name="from_name" value="Formulario Web Mach Weiter">
+  <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
 
-        <div class="form-group">
-          <label for="apellido">Apellido *</label>
-          <input type="text" id="apellido" name="apellido" required placeholder="Tu apellido">
-        </div>
-      </div>
+  <div class="form-row">
+    <div class="form-group">
+      <label for="nombre">Nombre *</label>
+      <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+    </div>
 
-      <div class="form-group">
-        <label for="email">Email *</label>
-        <input type="email" id="email" name="email" required placeholder="tu@email.com">
-      </div>
+    <div class="form-group">
+      <label for="apellido">Apellido *</label>
+      <input type="text" id="apellido" name="apellido" required placeholder="Tu apellido">
+    </div>
+  </div>
 
-      <div class="form-group">
-        <label for="telefono">Teléfono *</label>
-        <input type="tel" id="telefono" name="telefono" required placeholder="+56 9 1234 5678">
-      </div>
+  <div class="form-group">
+    <label for="email">Email *</label>
+    <input type="email" id="email" name="email" required placeholder="tu@email.com">
+  </div>
 
-      <div class="form-group">
-        <label for="deporte">Deporte/Disciplina *</label>
-        <input type="text" id="deporte" name="deporte" required placeholder="Ej: Fútbol, Atletismo, etc.">
-      </div>
+  <div class="form-group">
+    <label for="telefono">Teléfono *</label>
+    <input type="tel" id="telefono" name="telefono" required placeholder="+56 9 1234 5678">
+  </div>
 
-      <div class="form-group">
-        <label for="interes">¿Qué te interesa? *</label>
-        <select id="interes" name="interes" required>
-          <option value="">Selecciona una opción</option>
-          <option value="evaluacion">Evaluación inicial</option>
-          <option value="entrenamiento">Entrenamiento personalizado</option>
-          <option value="readaptacion">Readaptación de lesión</option>
-          <!-- agrega las que quieras -->
-        </select>
-      </div>
+  <div class="form-group">
+    <label for="deporte">Deporte/Disciplina *</label>
+    <input type="text" id="deporte" name="deporte" required placeholder="Ej: Fútbol, Atletismo, etc.">
+  </div>
 
-      <div class="form-group">
-        <label for="mensaje">Mensaje</label>
-        <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos más sobre ti y tus objetivos..."></textarea>
-      </div>
+  <div class="form-group">
+    <label for="interes">¿Qué te interesa? *</label>
+    <select id="interes" name="interes" required>
+      <option value="">Selecciona una opción</option>
+      <option value="evaluacion">Evaluación inicial</option>
+      <option value="entrenamiento">Entrenamiento personalizado</option>
+      <option value="readaptacion">Readaptación de lesión</option>
+    </select>
+  </div>
 
-      <button type="submit" class="btn">Enviar Consulta</button>
-    </form>
+  <div class="form-group">
+    <label for="mensaje">Mensaje</label>
+    <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos más sobre ti y tus objetivos..."></textarea>
+  </div>
+
+  <button type="submit" class="btn">Enviar Consulta</button>
+</form>
   </div>
 </section>
     <!-- Legal Section -->
